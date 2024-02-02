@@ -20,9 +20,6 @@ body {
     float: right;
     margin-top: 100px;
 }
-.start-left h1 {
-    font-size: 100px;
-}
 .note {
     position: absolute;
     bottom: 10px;
@@ -38,7 +35,7 @@ body {
 .yr-select {
     border: 1px solid #80B3FF;
     background-color: whitesmoke;
-    padding: 20px 40px 20px 40px;
+    padding: 15px 40px 15px 40px;
     font-weight: 600;
     font-size: 22px;
     color: #0B60B0;
@@ -66,4 +63,66 @@ body {
 }
 .drop:hover .years {
     display: block;
+}
+header {
+    display: flex;
+    height: 120px;
+    align-items: center;
+    align-content: center;
+    padding: 10px 40px 10px 40px;
+}
+.left {
+    display: flex;
+    align-items: center;
+}
+header img {
+    width: 16%;
+    margin-right: 20px;
+}
+.nav {
+    display: flex;
+    gap: 25px;
+    margin-left: 70px;
+    margin-top: 10px;
+}
+.nav a {
+    display: block;
+    text-decoration: none;
+    color: #0B60B0;
+    font-weight: 500;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.nav a:hover {
+    border-bottom: 3px solid #5D85BD;
+}
+.nav a.active {
+    border-bottom: 3px solid #5D85BD;
+}
+.icons {
+    display: flex;
+    gap: 20px;
+    width: 45%;
+    align-items: center;
+}
+.icons input {
+    padding: 14px;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    background-color: aliceblue;
+}
+.icons input:focus {
+    outline: none;
+    border-color: #0B60B0;
+    box-shadow: 0 0 10px 1px #5D85BD;
+   }
+.sign-in {
+    padding: 10px 25px 10px 25px;
+    border-radius: 8px;
+    background-color: #0B60B0;
+    color: aliceblue;
+    border: none;
+    font-size: 17px;
+    margin: 10px;
 }
