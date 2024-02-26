@@ -6,6 +6,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        #sem1-content, #sem2-content {
+          display: none;
+        }
+      </style>
 </head>
 <body>
     <header>
@@ -25,5 +30,72 @@
             <i class="material-icons" style="font-size: 30px; color: black;">settings</i>
         </div>
     </header>
+
+    <div style="text-align: center; margin: 30px auto;" id="vanish">
+        <p style="font-size: 30px;">Which semester are you in?</p>
+        <div class="sem-choice">
+            <button id="sem1-btn">3rd Sem</button>
+            <button id="sem2-btn">4th Sem</button>
+        </div>
+    </div>
+    <div id="sem1-content">
+        <p style="font-size: 24px; text-align: center; margin-top: 40px;">You can find the syllabus, notes and youtube playlists required for your 3rd semester here!</p>
+    <div class="subjects">
+        <div class="sub" onclick="redirect()">
+            <img src="math2.png" alt="">
+                <p>Transforms and Boundary Value Problems</p>
+        </div>
+        <div class="sub">
+            <img src="pps.png" alt="">
+                <p>Data Structures and Algorithms</p>
+        </div>
+        <div class="sub">
+            <img src="coa.png" alt="">
+                <p>Computer Organization and Architecture</p>
+        </div>
+        <div class="sub">
+            <img src="os.png" alt="">
+                <p>Operating Systems</p>
+        </div>
+        <div class="sub">
+            <img src="app.png" alt="">
+                <p>Advanced Programming Practices</p>
+        </div>
+        <div class="sub">
+            <img src="dtm.png" alt="">
+                <p>Design Thinking and Methodology</p>
+        </div>
+    </div>
+    </div>
+    <div id="sem2-content">
+        <p style="font-size: 24px; text-align: center; margin-top: 40px;">You can find the syllabus, notes and youtube playlists required for your 2nd semester here!</p>
+    <div class="subjects">
+        <div class="sub" onclick="redirect()">
+            <img src="pqt.png" alt="">
+                <p>Probability and Queueing Theory</p>
+        </div>
+        <div class="sub">
+            <img src="oodp.png" alt="">
+                <p>Design and Analysis of Algorithms</p>
+        </div>
+        <div class="sub">
+            <img src="ai.png" alt="">
+                <p>Artificial Intelligence</p>
+        </div>
+        <div class="sub">
+            <img src="dbms.png" alt="">
+                <p>Database Management Systems</p>
+        </div>
+        <div class="sub">
+            <img src="se.png" alt="">
+                <p>Social Engineering</p>
+        </div>
+        <div class="sub">
+            <img src="electives.png" alt="">
+                <p>Electives</p>
+        </div>
+    </div>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>
