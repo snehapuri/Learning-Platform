@@ -6,6 +6,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        #sem1-content, #sem2-content {
+          display: none;
+        }
+      </style>
 </head>
 <body>
     <header>
@@ -25,5 +30,97 @@
             <i class="material-icons" style="font-size: 30px; color: black;">settings</i>
         </div>
     </header>
+    
+    <div style="text-align: center; margin: 30px auto;" id="vanish">
+        <p style="font-size: 30px;">Which semester are you in?</p>
+        <div class="sem-choice">
+            <button id="sem1-btn">1st Sem</button>
+            <button id="sem2-btn">2nd Sem</button>
+        </div>
+    </div>
+    <div id="sem1-content">
+        <p style="font-size: 24px; text-align: center; margin-top: 40px;">You can find the syllabus, notes and youtube playlists required for your 1st semester here!</p>
+    <div class="subjects">
+        <div class="sub" onclick="redirect()">
+            <img src="math.png" alt="">
+                <p>Calculus and Linear Algebra</p>
+        </div>
+        <div class="sub">
+            <img src="pps.png" alt="">
+                <p>Programming for Problem Solving</p>
+        </div>
+        <div class="sub">
+            <img src="chem.png" alt="">
+                <p>Chemistry</p>
+        </div>
+        <div class="sub">
+            <img src="bio.png" alt="">
+                <p>Introduction to Computational Biology</p>
+        </div>
+        <div class="sub">
+            <img src="poe.png" alt="">
+                <p>Philosophy of Engineering</p>
+        </div>
+        <div class="sub">
+            <img src="mech.png" alt="">
+                <p>Basic Civil and Mechanical Workshop</p>
+        </div>
+        <div class="sub">
+            <img src="chinese.png" alt="">
+                <p>Chinese</p>
+        </div>
+        <div class="sub">
+            <img src="french.png" alt="">
+                <p>French</p>
+        </div>
+        <div class="sub">
+            <img src="german.png" alt="">
+                <p>German</p>
+        </div>
+        <div class="sub">
+            <img src="japanese.png" alt="">
+                <p>Japanese</p>
+        </div>
+        <div class="sub">
+            <img src="spanish.png" alt="">
+                <p>Spanish</p>
+        </div>
+        <div class="sub">
+            <img src="korean.png" alt="">
+                <p>Korean</p>
+        </div>
+    </div>
+    </div>
+    <div id="sem2-content">
+        <p style="font-size: 24px; text-align: center; margin-top: 40px;">You can find the syllabus, notes and youtube playlists required for your 2nd semester here!</p>
+    <div class="subjects">
+        <div class="sub" onclick="redirect()">
+            <img src="math2.png" alt="">
+                <p>Advanced Calculus and Complex Analysis</p>
+        </div>
+        <div class="sub">
+            <img src="oodp.png" alt="">
+                <p>Object Oriented Design Programming</p>
+        </div>
+        <div class="sub">
+            <img src="phy.png" alt="">
+                <p>Semiconductor Physics and Computational Methods</p>
+        </div>
+        <div class="sub">
+            <img src="eee.png" alt="">
+                <p>Electrical and Electronics Engineering</p>
+        </div>
+        <div class="sub">
+            <img src="eng.png" alt="">
+                <p>Communicative English</p>
+        </div>
+        <div class="sub">
+            <img src="egd.png" alt="">
+                <p>Engineering Graphics and Design</p>
+        </div>
+    </div>
+    </div>
+
+<script src="app.js"></script>    
 </body>
 </html>

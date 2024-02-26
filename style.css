@@ -34,7 +34,7 @@ body {
 }
 .yr-select {
     border: 1px solid #80B3FF;
-    background-color: whitesmoke;
+    background-color: white;
     padding: 15px 40px 15px 40px;
     font-weight: 600;
     font-size: 22px;
@@ -44,7 +44,7 @@ body {
 .years {
     display: none;
     position: absolute;
-    background-color: whitesmoke;
+    background-color: white;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -55,7 +55,7 @@ body {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    background-color: whitesmoke;
+    background-color: white;
     font-weight: 600;
 }
 .years a:hover {
@@ -133,10 +133,6 @@ header img {
     font-size: 17px;
     margin: 10px;
 }
-.subjects {
-    padding-left: 30px;
-    margin-top: 40px;
-}
 .titles {
     display: flex;
     align-items: center;
@@ -159,4 +155,42 @@ header img {
     background: none;
     border: none;
 }
-
+.sem-choice {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+.sem-choice button {
+    font-size: 18px;
+    border: 1px solid #0B60B0;
+    padding: 12px 40px 12px 40px;
+    border-radius: 14px;
+    background-color: white;
+}
+.sem-choice button:hover {
+    background-color: #0B60B0;
+    color: white;
+}
+.subjects {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+.sub {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 350px;
+    border: 0.5px solid #0B60B0;
+    border-radius: 12px;
+    padding: 20px 20px 20px 20px;
+    cursor: pointer;
+}
+.sub img {
+    width: 25%;
+}
+.sub:hover {
+    box-shadow: 0 4px 6px -1px #80B3FF,0 2px 4px -2px #80B3FF;
+}
